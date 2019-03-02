@@ -1,0 +1,7 @@
+{
+  "name": "AlarmIonic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

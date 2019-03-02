@@ -1,0 +1,99 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Cycle sleep alarm</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1 class="home">
+    Cycle sleep Alarm
+  </h1>
+  <p class="textleft">
+    I have to wake up at...
+  </p>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          <ion-item>
+              <ion-label>(hour)</ion-label>
+              <ion-select [(ngModel)]="hour" (ionChange)="hourChange(hour)">
+                <!-- <script>
+                  var i;
+                  for(i=0;i<24;i++){
+                    <ion-option value="i">i</ion-option>
+                  }
+                </script> -->
+                <ion-option value="0">0</ion-option>
+                <ion-option value="1">1</ion-option>
+                <ion-option value="2">2</ion-option>
+                <ion-option value="3">3</ion-option>
+                <ion-option value="4">4</ion-option>
+                <ion-option value="5">5</ion-option>
+                <ion-option value="6">6</ion-option>
+                <ion-option value="7">7</ion-option>
+                <ion-option value="8">8</ion-option>
+                <ion-option value="9">9</ion-option>
+                <ion-option value="10">10</ion-option>
+                <ion-option value="11">11</ion-option>
+                <ion-option value="12">12</ion-option>
+                <ion-option value="13">13</ion-option>
+                <ion-option value="14">14</ion-option>
+                <ion-option value="15">15</ion-option>
+                <ion-option value="16">16</ion-option>
+                <ion-option value="17">17</ion-option>
+                <ion-option value="18">18</ion-option>
+                <ion-option value="19">19</ion-option>
+                <ion-option value="20">20</ion-option>
+                <ion-option value="21">21</ion-option>
+                <ion-option value="22">22</ion-option>
+                <ion-option value="23">23</ion-option>
+              </ion-select>
+            </ion-item>
+      </ion-col>
+      <ion-col>
+            <ion-item>
+              <ion-label>(minute)</ion-label>
+              <ion-select [(ngModel)]="minute" (ionChange)="minuteChange(minute)">
+                  <ion-option value="0">0</ion-option>
+                  <ion-option value="15">15</ion-option>
+                  <ion-option value="30">30</ion-option>
+                  <ion-option value="45">45</ion-option>
+              </ion-select>
+            </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <p>
+
+      </p>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col align-self-center>
+          <p text-center>
+              <button ion-button color="primary" round large (click)="Calculate1()">Calculate</button>
+          </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <p>
+
+
+  </p>
+  <p class="textcenter">or</p>
+  <p>
+
+
+  </p>
+  <p class="textleft">Find out when to get up if you go to bed now</p>
+  <p text-center>
+      <button ion-button color="primary" round large (click)="Calculate2()">Calculate</button>
+  </p>
+  <p>
+
+
+
+  </p>
+  <p>
+    <button ion-button color="primary" round large (click)="GoToAlarmList()">Go to Alarm List</button>
+  </p>
+</ion-content>
